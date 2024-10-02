@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeraStore.Service.Logging.Api", "src\MeraStore.Service.Logging.Api\MeraStore.Service.Logging.Api.csproj", "{C38DD6BD-523F-426C-8AE9-C2CF16FB22AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{77FB79D8-EC62-41EE-A078-53CDA5FC2926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeraStore.Service.Logging.Core", "src\MeraStore.Service.Logging.Core\MeraStore.Service.Logging.Core.csproj", "{F3D78E0D-9BB1-4018-8F5D-D3CC8177AC59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeraStore.Service.Logging.Application", "src\MeraStore.Service.Logging.Application\MeraStore.Service.Logging.Application.csproj", "{31326F58-5D25-4A7A-8FD3-8648D36F8FD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeraStore.Service.Logging.Infrastructure", "src\MeraStore.Service.Logging.Infrastructure\MeraStore.Service.Logging.Infrastructure.csproj", "{B2CB3C3A-3C59-4D58-89E6-CE4BF8DA8587}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C38DD6BD-523F-426C-8AE9-C2CF16FB22AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38DD6BD-523F-426C-8AE9-C2CF16FB22AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38DD6BD-523F-426C-8AE9-C2CF16FB22AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38DD6BD-523F-426C-8AE9-C2CF16FB22AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D78E0D-9BB1-4018-8F5D-D3CC8177AC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D78E0D-9BB1-4018-8F5D-D3CC8177AC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D78E0D-9BB1-4018-8F5D-D3CC8177AC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D78E0D-9BB1-4018-8F5D-D3CC8177AC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31326F58-5D25-4A7A-8FD3-8648D36F8FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31326F58-5D25-4A7A-8FD3-8648D36F8FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31326F58-5D25-4A7A-8FD3-8648D36F8FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31326F58-5D25-4A7A-8FD3-8648D36F8FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CB3C3A-3C59-4D58-89E6-CE4BF8DA8587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CB3C3A-3C59-4D58-89E6-CE4BF8DA8587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CB3C3A-3C59-4D58-89E6-CE4BF8DA8587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CB3C3A-3C59-4D58-89E6-CE4BF8DA8587}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C38DD6BD-523F-426C-8AE9-C2CF16FB22AD} = {77FB79D8-EC62-41EE-A078-53CDA5FC2926}
+		{F3D78E0D-9BB1-4018-8F5D-D3CC8177AC59} = {77FB79D8-EC62-41EE-A078-53CDA5FC2926}
+		{31326F58-5D25-4A7A-8FD3-8648D36F8FD7} = {77FB79D8-EC62-41EE-A078-53CDA5FC2926}
+		{B2CB3C3A-3C59-4D58-89E6-CE4BF8DA8587} = {77FB79D8-EC62-41EE-A078-53CDA5FC2926}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90E05AEB-E7FB-4824-B54A-79A7A456A733}
+	EndGlobalSection
+EndGlobal

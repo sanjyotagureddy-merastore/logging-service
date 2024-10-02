@@ -1,0 +1,6 @@
+@MeraStore.Service.Logging_HostAddress = http://localhost:5286
+
+GET {{MeraStore.Service.Logging_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

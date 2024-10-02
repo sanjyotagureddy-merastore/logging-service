@@ -1,0 +1,1 @@
+# merastore-logging-service
