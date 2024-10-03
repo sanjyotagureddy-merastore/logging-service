@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MeraStore.Service.Logging.Core\MeraStore.Service.Logging.Core.csproj" />
+    <PackageReference Include="MeraStore.Shared.Common.Core" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
 </Project>

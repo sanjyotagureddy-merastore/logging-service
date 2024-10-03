@@ -12,6 +12,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
+
+ARG NUGET_PASSWORD
+RUN dotnet nuget add source "https://pkgs.dev.azure.com/sanjyotagureddy/merastore/_packaging/merastore/nuget/v3/index.json" -n "mera-store" -u "sanjyotagureddy" -p "$NUGET_PASSWORD" --store-password-in-clear-text
+
 COPY ["src/MeraStore.Service.Logging.Api/MeraStore.Service.Logging.Api.csproj", "src/MeraStore.Service.Logging.Api/"]
 COPY ["src/MeraStore.Service.Logging.Application/MeraStore.Service.Logging.Application.csproj", "src/MeraStore.Service.Logging.Application/"]
 COPY ["src/MeraStore.Service.Logging.Core/MeraStore.Service.Logging.Core.csproj", "src/MeraStore.Service.Logging.Core/"]
