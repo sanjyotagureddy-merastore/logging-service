@@ -1,6 +1,7 @@
 using MeraStore.Service.Logging.Application;
 using MeraStore.Service.Logging.Core.Interfaces;
 using MeraStore.Service.Logging.Infrastructure;
+using MeraStore.Service.Logging.Infrastructure.Extensions;
 using MeraStore.Service.Logging.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,6 +27,7 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
+app.MigrateDatabase<ApplicationDbContext>();
 app.UseSwagger();
 app.UseSwaggerUI(x =>
 {
