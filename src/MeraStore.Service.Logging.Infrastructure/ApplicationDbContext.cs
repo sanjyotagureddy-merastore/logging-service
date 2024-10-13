@@ -1,5 +1,6 @@
 ﻿using MeraStore.Service.Logging.Core.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace MeraStore.Service.Logging.Infrastructure;
 
@@ -7,7 +8,7 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 {
   public DbSet<Request> Requests { get; set; }
   public DbSet<Response> Responses { get; set; }
- 
+
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {

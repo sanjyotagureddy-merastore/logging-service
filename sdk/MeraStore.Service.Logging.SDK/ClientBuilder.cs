@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Polly.Extensions.Http;
+using Steeltoe.Common.Http.Discovery;
 
 namespace MeraStore.Service.Logging.SDK;
 
@@ -37,6 +38,11 @@ public class ClientBuilder
   public ClientBuilder UseDefaultRetryPolicy()
   {
     _retryPolicy = GetDefaultRetryPolicy();
+    return this;
+  }
+  public ClientBuilder UseServiceDiscovery()
+  {
+    _httpClientBuilder.AddServiceDiscovery();
     return this;
   }
 
